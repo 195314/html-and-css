@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #phone{
+            background-image: url(./image/img5.png);
+            background-repeat:no-repeat ;
+            height: 100vh;
+            margin-top: 32px;
+            margin-left: 333px;
+            
+          }
+
+        #image{
+            background-repeat: no-repeat;
+            height: 100vh;
+            animation-name: example;
+            animation-duration: 18s;
+            animation-iteration-count: infinite;
+            position: relative;
+            top: 25px;
+            left: 155px;
+            margin-right: 345px;
+            border-radius: 35px;
+            }
+
+     @keyframes example
+    {
+         0%{
+             background-image: url(./image/img1.png);
+            }
+        25%{
+             background-image: url(./image/img2.png);
+            }
+        50%{
+             background-image: url(./image/img3.png);
+            }
+        75%{
+             background-image: url(./image/img4.png);
+            }
+        100%{
+             background-image: url(./image/img1.png);
+            }
+     }
+
+     #right{
+      position: absolute;
+      top: 1px;
+          }
+   #box1{
+      border: 1px groove;
+      width: 350px;
+      text-align: center;
+      margin-top: 50px;
+      margin-left:800px ;
+      padding-bottom: 30px;
+    }
+
+    .int1{
+      width: 250px;
+      height: 35px;
+      border-radius: 2px;
+      border: 1px groove;
+      background-color: whitesmoke;
+     }
+
+     button{
+      width: 250px;
+      height: 35px;
+      background-color: rgb(16, 176, 230);
+      color: white;
+      border-radius: 6px;
+      border: 1px groove;
+     }
+
+     #fb{
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      top: 350px;
+      left: 910px;
+     }
+    
+     #fb1{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      position: absolute;
+      color: rgb(81, 81, 246);
+      position: absolute;
+      top: 350px;
+      left: 950px;
+      word-spacing: 5px;
+     }
+
+     #box2{
+      border: 1px groove;
+      width: 310px;
+      text-align: center;
+      margin-top: 30px;
+      margin-left:800px;
+      padding: 20px;
+    }
+
+    #box3{
+      width: 310px;
+      text-align: center;
+      margin-left:800px;
+      padding: 20px;
+    }
+     
+    a{
+      text-decoration: none;
+      color: rgb(148, 148, 148);
+      margin-left: 15px;
+      font-size: smaller;
+      
+    }
+
+    #link{
+      margin-left: 280px;
+      position: relative;
+      bottom: 70px;
+    }
+
+    #lang{
+      position: relative;
+      bottom: 50px;
+      margin-left: 700px;
+    }
+
+     
+  </style>
+</head>
+<body>
+  <div>
+    <div id="phone">
+        <div id="image">
+
+
+        </div>
+    </div>
+</div>
+
+<div id="right">
+  
+    <div id="box1">
+      <img src="./image/insta-removebg-preview.png" alt="" style="height: 100px; width: 100px;">
+      <input type="text" placeholder=" Phone number,Username or E-mail" class="int1" ><br><br>
+      <input type="text" placeholder=" Password" class="int1">
+      <br><br>
+      <button>Login</button><br><br>
+
+      <hr style="display: flex;flex-direction: row; width: 90px; margin-left: 52px;color: rgb(158,157,157);">
+
+
+      <p style="position: relative;top: -10px;left: 162px; display: flex;flex-direction: row; color: rgb(158, 157, 157);">OR</p>
+
+
+      <hr style="display: flex;flex-direction: row; width: 90px; margin-left: 202px;position: relative;top: -19px; color: rgb(158,157,157);">
+
+
+      <a href="https://www.facebook.com/"><img src="./image/fb.jpg" alt="" id="fb">
+        <p id="fb1">Log in Facebook</p>
+      </a><br><br><br>
+      <a href="https://www.instagram.com/accounts/password/reset/" style="text-decoration: none; color: rgb(163, 157, 157);">Forgot Password ?</a>
+      </div>
+
+      <div id="box2">
+      <p style="color: rgb(149, 144, 144); display: inline;">Don't have an account?</p>
+      
+      <a href="./signup.html" style="text-decoration: none; color: rgb(31, 124, 255);"> Sign up</a>
+      </div>
+    
+      <div id="box3">
+      <p>Get the app.</p><br>
+      <a href="https://play.google.com/"><img src="./image/playgoogle.jpg" alt="" style="height: 30px; width: 100px;"></a>
+      <a href="https://microsoftstore.com/"><img src="./image/microsoft.jpg" alt="" style="height: 30px; width: 80px;"></a>
+      </div>
+   </div>
+
+   <div id="link">
+   <a href="https://about.meta.com/">Meta</a>
+   <a href="https://about.instagram.com/">About</a>
+   <a href="https://about.instagram.com/en_US/blog">Blog</a>
+   <a href="https://about.instagram.com/about-us/careers">Jobs</a>
+   <a href="https://help.instagram.com/">Help</a>
+   <a href="https://developers.facebook.com/docs/instagram">API</a>
+   <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">Privacy</a>
+   <a href="https://help.instagram.com/581066165581870/">Terms</a>
+   <a href="https://www.instagram.com/directory/profiles/">Top Accounts</a>
+   <a href="https://www.instagram.com/explore/locations/">Locations</a>
+   <a href="https://www.instagram.com/web/lite/">Instagram Lite</a>
+   <a href="https://www.threads.net/">Threads</a>
+   <a href="https://www.facebook.com/help/instagram/261704639352628">Contact Uploading & Non-Users</a>
+   <a href="https://about.meta.com/technologies/meta-verified/">Meta Verified</a><br>
+  </div>
+    
+   <div id="lang">
+    <select name="Language" id="" style="border: none; color: rgb(160, 158, 158);">
+      <option>English</option>
+      <option>Tamil</option>
+      <option>Malayalam</option>
+      <option>Telungu</option>
+      <option style="display: inline;">Japanese</option>
+    </select>
+    <p style="display: inline; color: rgb(160,158,158) ;">© 2023 Instagram from Meta</p>
+  </div>
+
+</body>
+</html>
