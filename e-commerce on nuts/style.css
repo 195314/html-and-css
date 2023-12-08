@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fredoka One', cursive;
+}
+.box{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navigationbar{
+    display: flex;
+    align-items: top;
+    padding: 20px;
+}
+.logo img{
+    padding: 2px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    align-items: center;
+}
+nav ul{
+    align-items: center;
+    display: inline-block;
+    list-style-type:none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: dimgray;
+}
+p{
+    color: dimgray;
+}
+.row{
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-1{
+    flex-basis: 50%;
+    min-width: 500px;
+}
+.col-1 img{
+    max-width: 100%;
+    padding: 70px 0;
+}
+.col-1 h2{
+    font-size: 40px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: dimgray;
+    color: ghostwhite;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: background 0.3s;
+}
+.btn:hover{
+    background: tan;
+}
+.header{
+    background: radial-gradient(rgb(252, 252, 252),#c9f8a2);
+}
+.header .row{
+    margin-top: 60px;
+}
+.categories{
+    margin-top: 70px;
+}
+.container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 80%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #c9f8a2;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rateing .fa{
+    color:#c9f8a2;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.offer{
+    background: radial-gradient(rgb(252, 252, 252),#c9f8a2);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-1 .offer-img{
+    padding: 50px;
+}
+small{
+    color: #555555;
+}
+.footer{
+    background:  rgb(241, 250, 188);
+    color: #000;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #000;
+}
+.footer h3{
+    color: #555;
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.product1{
+    margin-top: 80px;
+}
+.product1 .col-2 img{
+    padding: 0;
+}
+.product1 .col-2{
+    padding: 20px;
+}
+.product1 h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.product1 select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.product1 input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+input:focus{
+    outline: none;
+}
+.product1 .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+.account{
+    padding: 50px 0;
+    background: radial-gradient(rgb(252, 252, 252),#c9f8a2);
+
+}
+.form-header{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.form-header span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-header form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #c9f8a2;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}

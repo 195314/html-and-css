@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALL PRODUCT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<Script>
+    function multiply(){
+                var num1=document.getElementById("number1").value
+                var num2=document.getElementById("price").defaultValue ="1000"
+                document.getElementById("result").innerHTML = num1*num2
+            }
+    </Script>
+</head>
+<body>
+    <div class="header">
+        <div class="box">
+            <div class="navigationbar">
+                <div class="logo">
+                    <img src="image/logo.png" width="195px" height="95px" style="vertical-align: right">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="product.html">PRODUCT</a></li>
+                        <li><a href="newpay.html">ABOUT</a></li>
+                        <li><a href="contactnew.html">CONTACT</a></li>
+                        <li><a href="new1.html">ACCOUNT</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container product1">
+        <div class="row">
+            <div class="col-2">
+                <img src="image/combo dry fruits.png" width="100%">
+            </div>
+            <div class="col-2">
+                <p>Home / combo dry fruits</p>
+                <h1>combo dry fruits</h1>
+                
+                <span style="position:absolute;">PRICE</span>
+                <h4 id="result">1000</h4> 
+                <p value="500" id="price" >   </p>
+                <button type="button" id="check"  onclick="multiply()" style="position:absolute;margin-top:-5px;">CHECK TOTAL</button>
+                <input type="number" value="1" id="number1">
+                <a href=""class="btn">BUY</a>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="box">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="image/play-store.png" width="50%">
+                        <img src="image/app store.png" width="50%">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="image/logo.png">
+                    <p>Our purpose to sustainably make the pleasure and Benefits of Heathy products</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>link</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Feedback</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us On</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

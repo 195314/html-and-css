@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fredoka One', cursive;
+}
+.box{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navigationbar{
+    display: flex;
+    align-items: top;
+    padding: 20px;
+}
+.logo img{
+    padding: px;
+    margin-top: -10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    align-items: center;
+}
+nav ul{
+    align-items: center;
+    display: inline-block;
+    list-style-type:none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: dimgray;
+}
+p{
+    color: dimgray;
+}
+.header{
+    background: radial-gradient(rgb(252, 252, 252),#c9f8a2);
+    height: 15vh;
+}
+td{
+     width: 300px;
+     padding-left: 15px;
+     height: 35px;
+     
+  }
+  #body{
+     margin-top: 30px;
+  }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="box">
+            <div class="navigationbar">
+                <div class="logo">
+                    <img src="image/logo.png" width="195px" height="95px" style="vertical-align: right">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="product.html">PRODUCT</a></li>
+                        <li><a href="new1.html">ABOUT</a></li>
+                        <li><a href="contactnew.html">CONTACT</a></li>
+                        <li><a href="new1.html">ACCOUNT</a></li>
+                       
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!---footer--->
+    </div>
+    <div id="body">
+        <center>
+        <table border="groove">
+            <tr>
+                <td colspan="2"><b>Payment Details ...</b></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Sri"></td>
+                <td><input type="text" placeholder="Hari"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="email" placeholder="harivk165@gmail.com"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="number" placeholder="9942148933"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" placeholder="6574849484@sbi"></td>
+            </tr>
+            <tr> <td colspan="2"><input type="text" placeholder="UPI transaction"></td></tr>
+            <tr>
+                <td><input type="text" placeholder="1000"></td>
+                <td rowspan="2"><input type="text" placeholder="900"></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="100 - Discount"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea name="" id="" cols="80" rows="10" placeholder="No.57, 58, Film St, Annai Indira Nagar, Anna Nagar Extension, Velachery, Chennai, Tamil Nadu 600042" style="border: none;"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox">Check All Details</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2"><button>Print Bill</button></td>
+            </tr>
+        </table>
+        </center>
+       </div>
+</body>
+</html>

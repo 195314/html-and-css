@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             div{
+                width: 300px;
+  padding: 40px;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 0px;
+  border-radius: 3%;
+             }
+    
+p{
+    font-size: 16px;
+}
+h1{
+    font-size: 15px;
+}
+h3{
+    font-size: 20px;
+}
+img{
+    border-radius: 200%;
+}
+    </style>
+    <script>
+           var otp=Math.floor(Math.random()*999999)
+        alert(otp)
+        function otp_verification(){
+            var user_otp=document.getElementById("OTP").value 
+            if(otp==user_otp){
+                window.location.href=""
+            }
+            else{
+            document.getElementById("error").innerHTML="Incorrect OTP"
+            }
+
+        }
+        function resend_otp(){
+            window.location.href="./otp.html"
+        }
+    </script>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+        
+            <div>
+            <h3>OTP VERFICATION</h3>
+            <img src="./image/otp-removebg-preview.png " width="75px">
+           
+            <p>We sent a 6-digit code to your moblie number. Enter the code to reset your password </p>
+            <input type="number"placeholder="Enter Code" id="OTP">
+            <br>
+            <br>
+
+            <button onclick="otp_verification()"style="border-radius: 1%;"
+            >Verify</button>
+   <br>
+        <br>
+            <button onclick="resend_otp()" style="border-radius: 1%;">Resend OTP</button>
+            <p id="error"></p> 
+        </div>
+      
+
+    </center>
+
+</body>
+</html>

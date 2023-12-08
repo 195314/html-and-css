@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALL PRODUCT</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fredoka One', cursive;
+}
+.box{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navigationbar{
+    display: flex;
+    align-items: top;
+    padding: 20px;
+}
+.logo img{
+    padding: 2px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    align-items: center;
+}
+nav ul{
+    align-items: center;
+    display: inline-block;
+    list-style-type:none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: dimgray;
+}
+p{
+    color: dimgray;
+}
+.row{
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.header{
+    background: radial-gradient(rgb(252, 252, 252),#c9f8a2);
+    height: 14vh;
+}
+.header .row{
+    margin-top: 60px;
+}
+
+.form-header{
+    background: #ffffff;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 10px 10px 10px rgb(151, 140, 140);
+    overflow: hidden;
+    animation: example;
+    transition: box-shadow 0.7s ease
+}
+
+.form-header:hover{
+    box-shadow:0px 0px 10px #249624; -index:1000;
+}
+.form-header span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    width: 100px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-header form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+    
+}
+form input{
+    width: 80%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+.footer{
+    background:  rgb(241, 243, 228);
+    color: #000;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #000;
+}
+.footer h3{
+    color: #555;
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+    </style>
+    <script>
+ function login_Validation(){
+            var db={'srihari':'Sri@2002','Srihari1':'Sri@1818'}
+            var username=document.getElementById("username").value 
+            var password=document.getElementById("password").value
+            var all_users=Object.keys(db)
+            var flag=false
+            for(var i=0;i<all_users.length;i++){
+                if((all_users[i]==username)&&(db[all_users[i]]==password)){
+                    flag=true
+                }
+            }
+            if(flag==true){
+                window.location.href="./index.html"
+            }else{
+alert("Invalid Username or Incorrect Password")
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="box">
+            <div class="navigationbar">
+                <div class="logo">
+                    <img src="image/logo.png" width="195px" height="95px" style="vertical-align: right">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="product.html">PRODUCT</a></li>
+                        <li><a href="newpay.html">ABOUT</a></li>
+                        <li><a href="contactnew.html">CONTACT</a></li>
+                        <li><a href="new1.html">ACCOUNT</a></li>
+                       
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--body-->
+    <div id="body">
+        <br><br>
+        <div class="form-header">
+            <div class="form-btn">
+                <span>Login</span>
+                <hr>
+            </div>
+            <div>
+                <input type="text" placeholder="Username" id="username" style="position: absolute;margin-left: -30px;margin-top: 25px;">
+                <input type="password" placeholder="Password" id="password" style="position: absolute;margin-top: 70px;margin-left: -30px;">
+               <button class="btn" onclick="login_Validation()" style="position: absolute;margin-top: 115px;margin-left: -5px;width: 40%;"> Login</button>
+                <a href="./forgetpassnext.html" style="top: 150px;position: relative;">Forgot Password</a>
+            </div>
+        
+    </div>
+<br>
+<br>
+    <!--footer-->
+    <div class="footer">
+        <div class="box">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="image/play-store.png" width="50%">
+                        <img src="image/app store.png" width="50%">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="image/logo.png">
+                    <p>Our purpose to sustainably make the pleasure and Benefits of Heathy products</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>link</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Feedback</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us On</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

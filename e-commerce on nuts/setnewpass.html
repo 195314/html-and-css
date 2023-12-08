@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          function verification(){
+        // Password Validation
+var Password=document.getElementById("password").value 
+var flag_password=false
+var upper=0
+var lower=0
+var Num=0
+var special=0
+for(var i=0;i<Password.length;i++){
+    if(('A'<=Password[i])&&(Password[i]<='Z')){
+        upper++
+    }else if(('a'<=Password[i])&&(Password[i]<='z')){
+        lower++
+    }else if(('0'<=Password[i])&&(Password[i]<='9')){
+        Num++
+    }else{
+        special++
+    }
+}
+if((upper>=1)&&(lower>=1)&&(Num>=1)&&(special>=1)&&(Password.length>=8)&&(Password.length<=12)){
+    flag_password=true
+}
+
+
+// Confirm Password Validation
+var confirm=document.getElementById("confirm").value 
+var flag_confirm=false
+if(Password==confirm){
+    flag_confirm=true
+}
+// Final Validation
+if((flag_password==true)&&(flag_confirm==true)){
+    window.location.href="./new1.html"
+}
+else{
+        document.getElementById("error").innerHTML="Invalid Details"
+        document.getElementById("error").style.color="red"
+}
+          }
+    </script>
+    <style>
+     
+        img{
+    border-radius: 500px;
+    height: 90px;
+    width: 90px;
+        }
+       div{
+           width: 300px; 
+           padding: 50px;
+           margin: 50px;
+           border:2px solid black;
+           border-radius:3%;
+           position: absolute;
+       }
+       #v{
+        text-align: right;
+       }
+     
+   </style>
+</head>
+<body>
+      
+    <center>
+
+   
+        <br>
+        <br>
+        <br>
+        <br>
+        <div style="position: relative;">
+            <center>
+                    <img src="./image/logoac.png">
+            <h1>Account Recovery</h1>
+            <p><b>Create New Password</b></p>
+            <br>
+           
+                <p id="v">
+                <label>New Password:        </label><input type="password" placeholder="Enter new password" id="password">
+                <br>
+                <br><br>
+                <label>Re-enterPassword:</label><input type="password" placeholder="Re-enter new password" id="confirm">
+                </p>
+                <br>
+                <br>
+                <button style="background-color: rgb(178, 136, 136);color: black;"><a style=" text-decoration:none ;" >CANCEL</a></button>
+
+                <button style="background-color: rgb(124, 124, 155);" onclick="verification()"> UPDATE</button>
+                <p id="error"> </p>
+           
+        </center>
+    
+        </div>
+    </center>
+</body>
+</html>

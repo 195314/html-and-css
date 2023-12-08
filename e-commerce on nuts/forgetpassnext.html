@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+div {
+  width: 400px;
+  padding: 50px;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 0;
+  border-radius: 12px;
+  
+}
+p{
+    font-size: 16px;
+}
+h1{
+    font-size: 15px;
+}
+h3{
+    font-size: 20px;
+}
+img{
+    border-radius: 300px;
+    height: 90px;
+    width: 90px;
+}
+
+    </style>
+    <script>
+              function signup_validation(){
+
+// Phone Number Validation
+var Phone=document.getElementById("phone").value 
+var flag_phone=false
+if((6000000000<=Phone)&&(Phone<=9999999999)){
+ window.location.href="./forgetotp.html"
+}else{
+    document.getElementById("error").innerHTML="Enter vaild number"
+}
+
+}
+    </script>
+</head>
+<body>
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+                <div>
+                  <h3>Find Your Account</h3>
+
+                
+                    <img src="./image/png-transparent-computer-icons-mobile-app-development-android-my-account-icon-blue-text-logo.png">
+               <br>
+               <br>
+               <p>Trouble logging in?</p>
+               <p>Please enter your email address or mobile number to search for your account.</p>
+                <input type="number"placeholder="Moblie Number" id="phone">
+                <br>
+                <br>
+    <button onclick="signup_validation()">Sent Login Link</button>
+                
+                <br>
+                <br>
+               <a href="./new1.html"style="text-decoration:none" >Back to Login</a>
+             <p id="error"></p>
+            </div>
+          
+        </center>
+</body>
+</html>
