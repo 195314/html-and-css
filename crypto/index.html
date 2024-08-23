@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Wallet Connection</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#balance-section {
+    margin-top: 30px;
+}
+
+#balance {
+    font-size: 24px;
+    color: #007bff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Connect Your Crypto Wallet</h1>
+        <div id="wallet-section">
+            <button id="connect-wallet" class="btn">Connect Wallet</button>
+            <select id="chain-select" class="dropdown">
+                <option value="solana">Solana</option>
+                <option value="ethereum">Ethereum</option>
+            </select>
+            <p id="status" class="status">Not connected</p>
+        </div>
+        <div id="balance-section">
+            <h3>Your Balance</h3>
+            <p id="balance">-</p>
+        </div>
+    </div>
+
+    <script>
+
+document.getElementById('connect-wallet').addEventListener('click', async () => {
+    const chain = document.getElementById('chain-select').value;
+    let balance = '0';
+    
+    if (chain === 'solana') {
+        // Example connection logic (Replace with actual Solana wallet code)
+        balance = '10.5 SOL'; // Hardcoded for simplicity; in practice, you'd use an API to fetch this.
+    } else if (chain === 'ethereum') {
+        // Example connection logic (Replace with actual Ethereum wallet code)
+        balance = '1.2 ETH'; // Hardcoded for simplicity; in practice, you'd use an API to fetch this.
+    }
+    
+    document.getElementById('status').innerText = `Connected to ${chain}`;
+    document.getElementById('balance').innerText = balance;
+});
+
+    </script>
+</body>
+</html>
